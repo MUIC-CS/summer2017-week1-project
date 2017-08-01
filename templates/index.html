@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Wall</title>
+</head>
+<body>
+    <h1> All the Posts </h1>
+    <div>
+      <form action="/" method="post">
+        <input type="text" name="message" />
+        <input type="submit" value="Send Post" id="sendButton" />
+      </form>
+    </div>
+    <div>
+      <h2>Posts</h2>
+      <ul>
+        {% for post in posts %}
+          <li>
+            {{ post }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+</body>
+</html>
